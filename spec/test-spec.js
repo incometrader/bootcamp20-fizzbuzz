@@ -10,6 +10,14 @@ describe("Fizz Buzz tests ", function() {
     expect(fizzBuzz(5)).toBe('Buzz');
   });
 
+  it("should return `Fizz` for number divisible by 3", function() {
+    expect(fizzBuzz(93)).toBe('Fizz');
+  });
+
+  it("should return `Buzz` for number divisible by 5", function() {
+    expect(fizzBuzz(100)).toBe('Buzz');
+  });
+
   it("should return `FizzBuzz` for 15", function() {
     expect(fizzBuzz(15)).toBe('FizzBuzz');
   });
@@ -26,12 +34,20 @@ describe("Fizz Buzz tests ", function() {
     expect(fizzBuzz(63)).toBe('Fizz');
   });
 
+  it("should return `Buzz` for 55", function() {
+    expect(fizzBuzz(55)).toBe('Buzz');
+  });
+
   it("should return 7 since its indivisible by 3 and 5", function() {
     expect(fizzBuzz(7)).toBe(7);
   });
 
   it("should return 101 since its indivisible by 3 and 5", function() {
     expect(fizzBuzz(101)).toBe(101);
+  });
+
+  it("should return 149 since its indivisible by 3 and 5", function() {
+    expect(fizzBuzz(149)).toBe(149);
   });
 
 });
